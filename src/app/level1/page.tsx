@@ -105,7 +105,7 @@ export default function Level1() {
               </p>
               <div className="bg-white/20 p-8 rounded-xl backdrop-blur-sm border-2 border-white/30">
                 <p className="text-lg text-white mb-4">
-                  "You're an amazing friend, and I'm so glad maine tujhe uss din message kiya. 
+                &#34;You&#39;re an amazing friend, and I&#39;m so glad maine tujhe uss din message kiya. 
                 </p>
                 <div className="space-y-4">
                   <p className="text-yellow-200 italic">

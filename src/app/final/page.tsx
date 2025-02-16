@@ -15,7 +15,7 @@ export default function Final() {
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm">
         <h1 className="text-4xl font-bold text-center text-white mb-8">Congratulations!</h1>
         <div className="bg-white p-8 rounded-lg shadow-lg text-center">
-          <h2 className="text-3xl font-bold text-purple-600 mb-4">You've unlocked a special gift:</h2>
+          <h2 className="text-3xl font-bold text-purple-600 mb-4">You&#39;ve unlocked a special gift:</h2>
           <p className="text-2xl text-purple-500 mb-4">A real-life hangout! 🎉</p>
           <p className="text-xl text-purple-400 mb-8">Valid for: One unforgettable day with me 😉</p>
           {!claimed ? (
@@ -29,7 +29,7 @@ export default function Final() {
             <div>
               <p className="text-2xl text-green-500 mb-4">Date Claimed!</p>
               <p className="text-lg text-purple-400">
-                Get ready for an amazing time together. I can't wait to see you!
+                Get ready for an amazing time together. I can&#39;t wait to see you!
               </p>
             </div>
           )}

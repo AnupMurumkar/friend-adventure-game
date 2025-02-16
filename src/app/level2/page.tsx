@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image';
 
 type Card = {
   id: number
@@ -61,7 +62,7 @@ export default function Level2() {
         setFlippedCards([])
       }, 1000)
     }
-  }, [flippedCards, cards])
+  }, [flippedCards, cards,matchedCards])
 
   useEffect(() => {
     if (matchedCards.length === cards.length && cards.length > 0) {
@@ -85,11 +86,11 @@ export default function Level2() {
   const renderArtImage = () => {
     switch (artStyle) {
       case 'caricature':
-        return <img src="/images/cartoonphoto.webp" alt="Caricature Art" className="w-64 h-64 rounded-xl mx-auto" />
+        return <Image src="/images/cartoonphoto.webp" alt="Caricature Art" className="w-64 h-64 rounded-xl mx-auto" />
       case 'avatar':
-        return <img src="/images/cutephoto.webp" alt="Avatar Art" className="w-64 h-64 rounded-xl mx-auto" />
+        return <Image src="/images/cutephoto.webp" alt="Avatar Art" className="w-64 h-64 rounded-xl mx-auto" />
       case 'vector':
-        return <img src="/images/vectorphoto.webp" alt="Vector Art" className="w-64 h-64 rounded-xl mx-auto" />
+        return <Image src="/images/vectorphoto.webp" alt="Vector Art" className="w-64 h-64 rounded-xl mx-auto" />
       default:
         return null
     }
