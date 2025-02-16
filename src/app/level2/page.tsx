@@ -62,7 +62,7 @@ export default function Level2() {
         setFlippedCards([])
       }, 1000)
     }
-  }, [flippedCards, cards,matchedCards])
+  }, [flippedCards, cards])
 
   useEffect(() => {
     if (matchedCards.length === cards.length && cards.length > 0) {
